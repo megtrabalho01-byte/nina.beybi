@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nina.Beybi</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Fundo */
+        body {
+            height: 100vh;
+            width: 100vw;
+            background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3797dde5-245e-4812-b842-3e699b8972e5/dc1qulq-54b85eb8-0cc2-4a0c-aab0-e9cc351a1ca5.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM3OTdkZGU1LTI0NWUtNDgxMi1iODQyLTNlNjk5Yjg5NzJlNVwvZGMxcXVscS01NGI4NWViOC0wY2MyLTRhMGMtYWFiMC1lOWNjMzUxYTFjYTUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pBfPWZapvknIkalDesyXp0NbCho9MNJ7py3c9Usunsg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        /* Container principal */
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* semi-transparente */
+            padding: 30px 20px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* Foto redonda */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-bottom: 15px;
+        }
+
+        /* Nome de usuário */
+        .username {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Botões */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .links a {
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            background-color: #ff69b4;
+            color: #fff;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #ff85c1;
+            transform: scale(1.05);
+        }
+
+        /* Responsividade */
+        @media (max-width: 500px) {
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+
+            .username {
+                font-size: 1.3rem;
+            }
+
+            .links a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Foto -->
+        <img src="Lari.webp" alt="Nina Beybi" class="profile-pic">
+
+        <!-- Nome de usuário -->
+        <div class="username">@Nina.Beybi</div>
+
+        <!-- Botões -->
+        <div class="links">
+            <a href="https://www.instagram.com/eu_ninabeybi/?igsh=czdwejZleHl1amU3#" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@nina.beybii?_t=ZM-8ws4BH1MJJV&_r=1" target="_blank">TikTok</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+            <a href="https://t.me/+BD7tQZiQ2TFlM2Zh" target="_blank">Telegram Free</a>
+            <a href="https://t.me/LarissaRamillobot" target="_blank">Telegram VIP</a>
+            <a href="https://discord.com/invite/67CRbjKz8v" target="_blank">Discord</a>
+            <a href="https://privacy.com.br/checkout/ninabeybi" target="_blank">Privacy VIP</a>
+            <a href="https://privacy.com.br/checkout/liberdadeerotica" target="_blank">Privacy Free</a>
+            <a href="https://onlyfans.com/xxbaby18" target="_blank">OnlyFans</a>
+            
+        </div>
+    </div>
+
+    <script>
+        // Animação simples de clique nos links
+        const links = document.querySelectorAll('.links a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                link.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    link.style.transform = 'scale(1)';
+                }, 100);
+            });
+        });
+    </script>
+
+</body>
+</html>
